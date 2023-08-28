@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c46f32436a.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body class="bg-gradient-to-r from-pink-600 via-purple-500 to-blue-500 min-h-screen min-w-full ">
+    <!--main div-->
+    <div class="flex flex-col h-screen mx-5 mt-6 md:flex-row-reverse md:justify-center md:items-center ">
+                <!--image-->
+                <div class="bg-custom-image bg-cover bg-center h-1/3 md:h-1/2 md:w-1/2 xl:w-1/3 2xl:w-1/4 justify-center items-center ">
+                    <!-- purple filter -->
+                    <div class="relative flex flex-col justify-center  bg-gradient-to-r from-blue-500/60 via-purple-500/60 to-purple-800/60 p-8 pb-4 w-full h-full text-base">
+                    
+                        <!--title + text -->
+                        <div class=" flex flex-col justify-center align-middle text-white">
+                            <h1 class="text-3xl font-semibold">Lorem Ipsum</h1>
+                            <p class="text-sm ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+        
+                        <!-- links on bottom right -->
+                        <div class="absolute right-2 bottom-1 flex justify-end align-text-bottom text-white text-xs pt-5">
+                            <a href="#" class="mr-3 ">Get Started</a>
+                            <a href="#">Terms & conditions</a>
+                        </div>  
+        
+                    </div>
+                </div>
+        
+        
+        
+        <!--login-->
+        <div class=" bg-white flex flex-grow justify-center md:items-center h-1/2 md:w-1/2 md:h-1/2 lg:flex-grow-0 xl:w-1/3 2xl:w-1/4">
+        <form action=" " class=" flex flex-col md:justify-center items-center p-5 " onsubmit="validateForm(event)">
+            <!--title-->
+            <div>
+                <h1 class="flex flex-nowrap text-5xl p-5 font-bold">
+                    <span class="text-pink-800">i</span>
+                    <span class="text-purple-700">n</span>
+                    <span class="text-purple-900">d</span>
+                    <span class="text-indigo-800">i</span>
+                    <span class="text-blue-900">g</span>
+                    <span class="text-cyan-800">o</span>
+                    <span class="text-blue-600">p</span>
+                    <span class="text-blue-500">a</span>
+                    <span class="text-blue-300">y</span>
+                  </h1>
+            </div>
+
+            <!--user-->
+            <div class="border border-gray-400 p-2 w-full m-2">
+                <i class="fa-solid fa-user"></i>
+                <input class="focus:outline-none" type="email" name="email" id="email" placeholder="Email">
+                
+                
+            </div>
+            <!-- errmsg -->
+            <div class="flex items-start">
+                <p id="error1" class="-mt-2  text-xs  text-red-600 hidden ">Please enter valid username.</p>
+            </div>
+            <!--pass-->
+            <div class="border border-gray-400 p-2 w-full m-2">
+                <i class="fa-solid fa-lock"></i>
+                <input class="focus:outline-none" type="password" name="password" id="password" placeholder="password">
+                 
+            </div>
+            <div class="flex text-left ">
+                <!--errmsg  -->
+                <p id="error2" class="-mt-2 text-xs text-red-600 hidden">Please enter valid password.</p>
+            </div>
+
+            <!--button-->
+            <div class="flex w-full m-2">
+                <button class="bg-purple-700 text-white text-bold p-1 w-full" type="submit">Log In</button>
+            </div>
+
+            <!--text+regesterLinkparijamalwankar-->
+            <div class="text-xs text-center font-extralight mb-3">
+                <p>you need to be a registered client to access our platform.</p>
+                <a class="text-blue-800" href="#">Register Here</a>
+            </div>
+
+        </form>
+        </div>
+
+
+    </div>
+</body>
+</html>

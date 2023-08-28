@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom.css or your existing CSS file */
+.bg-custom-image {
+    background-image: url('img/img.jpeg');
+    /* Other background properties like size, position, etc. can be added here */
+  }
+  

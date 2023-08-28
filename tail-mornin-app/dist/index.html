@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body>
+    <!--date and all-->
+    <div class="md:flex">
+    <div class="md:shrink-0">
+    <div class="pt-10 pl-10 pr-10">
+    <div class="tracking-wide"> 
+        <h1 class="lg:flex text-3xl mt-1 font-bold">Today</h1>
+        <h3 id="h-date" class=" flex font-semibold text-gray-600">02 aug</h3>
+        
+    </div>
+    </div>
+    </div>
+  
+    <div className ="h-screen bg-gray-100 p-6 py"> <!-- Date Slider -->
+        <!--week-->
+       <div class="flex mt-5 bg-white justify-evenly  md:justify-center rounded-lg mx-auto py-4 px-2 md:mx-12 mb-10"> 
+        
+        <!--day1-->
+        <div class="flex group hover:bg-purple-500 hover:shadow-lg hover-dark-shadow rounded-full mx-1 transition-all duration-300 cursor-pointer justify-center w-16">
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_1" class="text-gray-900 group-hover:text-gray-100 text-sm transition-all group-hover:font-semibold duration-300">
+                        Sun
+                    </p>
+                    <!--date-->
+                    <p id="date_1" class="text-gray-900 group-hover:text-gray-100 mt-3 group-hover:font-bold transition-all duration-300">
+                        30
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+        <!--day2-->
+         <div class="flex group hover:bg-purple-500 hover:shadow-lg hover-dark-shadow rounded-full mx-1 transition-all duration-300 cursor-pointer justify-center w-16">
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_2" class="text-gray-900 group-hover:text-gray-100 text-sm transition-all group-hover:font-semibold duration-300">
+                        Mon
+                    </p>
+                    <!--date-->
+                    <p id="date_2" class="text-gray-900 group-hover:text-gray-100 mt-3 group-hover:font-bold transition-all duration-300">
+                        31
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+        <!--day3-->
+         <div class="flex group hover:bg-purple-500 hover:shadow-lg hover-dark-shadow rounded-full mx-1 transition-all duration-300 cursor-pointer justify-center w-16">
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_3" class="text-gray-900 group-hover:text-gray-100 text-sm transition-all group-hover:font-semibold duration-300">
+                        Tue
+                    </p>
+                    <!--date-->
+                    <p id="date_3" class="text-gray-900 group-hover:text-gray-100 mt-3 group-hover:font-bold transition-all duration-300">
+                        01
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+        <!--day4_main-->
+         <div class="flex group bg-purple-600 shadow-lg hover-dark-shadow rounded-full mx-1 duration-300 cursor-pointer justify-center w-16">
+            
+            <!--span section-->
+            <span class="flex h-2 w-2 absolute bottom-1.5">
+                <span class="animate-ping absolute group-hover:opacity-75 opacity-0 inline-flex h-full w-full bg-purple-400">
+                </span>
+                <span class="relative inline-flex rounded-full h- w3 bg-purple-100">
+                </span>
+            </span>
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_4" class="text-gray-100 text-sm font-semibold">
+                        Wed
+                    </p>
+                    <!--date-->
+                    <p id="date_4" class="text-gray-100 mt-3 font-bold ">
+                        02
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+        <!--day5-->
+         <div class="flex group hover:bg-purple-500 hover:shadow-lg hover-dark-shadow rounded-full mx-1 transition-all duration-300 cursor-pointer justify-center w-16">
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_5" class="text-gray-900 group-hover:text-gray-100 text-sm transition-all group-hover:font-semibold duration-300">
+                        Thu
+                    </p>
+                    <!--date-->
+                    <p id="date_5" class="text-gray-900 group-hover:text-gray-100 mt-3 group-hover:font-bold transition-all duration-300">
+                        03
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+        <!--day6-->
+         <div class="flex group hover:bg-purple-500 hover:shadow-lg hover-dark-shadow rounded-full mx-1 transition-all duration-300 cursor-pointer justify-center w-16">
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_6" class="text-gray-900 group-hover:text-gray-100 text-sm transition-all group-hover:font-semibold duration-300">
+                        Fri
+                    </p>
+                    <!--date-->
+                    <p id="date_6" class="text-gray-900 group-hover:text-gray-100 mt-3 group-hover:font-bold transition-all duration-300">
+                        04
+                    </p>
+                </div>
+            </div>
+        </div>
+         <!--day7-->
+         <div class="flex group hover:bg-purple-500 hover:shadow-lg hover-dark-shadow rounded-full mx-1 transition-all duration-300 cursor-pointer justify-center w-16">
+
+            <!--day items alignments-->
+            <div class="flex items-center px-4 py-4">
+                <!--text align-->
+                <div class="text-center">
+                    <!--day-->
+                    <p id= "day_7" class="text-gray-900 group-hover:text-gray-100 text-sm transition-all group-hover:font-semibold duration-300">
+                        Sat
+                    </p>
+                    <!--date-->
+                    <p id="date_7" class="text-gray-900 group-hover:text-gray-100 mt-3 group-hover:font-bold transition-all duration-300">
+                        05
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+       </div>
+    </div>
+    </div>
+    
+    <div>
+        <ol class = "relative border-l m-10 border-purple-800">
+            <!--1-->
+            <li class="mb-10 ml-6">
+                <div>
+                <!--circles-->
+                <span class="absolute -left-1.5 flex h-3 w-3 items-center justify-center rounded-full bg-white ring-2 ring-purple-600">
+
+                </span>
+                <!--text-->
+                
+                    <h3 class="mb-1  flex items-center text-lg font-semibold text-gray-900">Wake up</h3>
+                    <time class = "mb-2 block text-sm font-normal leading-none text-gray-600">6.00 am</time>
+                    <p class="mb-4 text-base font-normal text-gray-700">brush -> drink water -> strech -> meditate</p>
+                </div>
+            </li>
+            <!--2-->
+            <li class="mb-10 ml-6">
+                <!--circles-->
+                <span class="absolute -left-1.5 flex h-3 w-3 items-center justify-center rounded-full bg-white ring-2 ring-purple-600">
+                        
+
+                </span>
+                <!--text-->
+                <div>
+                    <h3 class="mb-1  flex items-center text-lg font-semibold text-gray-900">Excersise</h3>
+                    <time class = "mb-2 block text-sm font-normal leading-none text-gray-600">8.00 am</time>
+                    <p class="mb-4 text-base font-normal text-gray-700">Push ups x10, Squats x10, jogging 20min</p>
+                </div>
+            </li>
+            <!--3main-->
+            <li class="mb-10 ml-6">
+                <!--circles-->
+                <span class="absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full bg-purple-200 ring-4 ring-purple-600"></span>
+                <!--text-->      
+                 <div class="items-center justify-between p-4 bg-purple-600 border border-gray-200 rounded-lg shadow-sm sm:flex">
+                   <time class=" text-xs font-normal text-gray-100 sm:order-last sm:mb-0">Now</time>
+                   <div class="text-lg font-bold text-gray-100 ">Join Meeting</div>
+                </div>
+            </li>
+            <!--4-->
+            <li class="mb-10 ml-6">
+                <!--circles-->
+                <span class="absolute -left-1.5 flex h-3 w-3 items-center justify-center rounded-full bg-white ring-2 ring-purple-600"></span>
+                <!--text-->
+                <div>
+                    <h3 class="mb-1  flex items-center text-lg font-semibold text-gray-900">Excersise</h3>
+                    <time class = "mb-2 block text-sm font-normal leading-none text-gray-600">8.00 am</time>
+                    <p class="mb-4 text-base font-normal text-gray-700">Push ups x10, Squats x10, jogging 20min</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="p-20"></div>
+
+    <div class="fixed inline-flex z-50 w-full max-w-lg -translate-x-1/2 bg-white border border-gray-600 rounded-full -bottom-1.5 left-1/2">
+        
+        <div class="flex justify-evenly h-full mx-auto">
+            <button type="button" class="inline-flex flex-col p-4 items-center justify-center px-5 rounded-full hover:text-white hover:bg-purple-600">
+                <svg class="w-5 h-5 mb-1 text-gray-500 hover:text-white group-hover:text-purple-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                </svg>
+                <span class="sr-only">Home</span>
+            </button>
+            <div class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+
+            </div>
+        </div>
+        <div class="flex justify-evenly h-full max-w-lg mt-1 mx:auto">
+            <button type="button" class="inline-flex items-center justify-center w-10 h-10 font-medium bg-purple-600 rounded-full hover:text-white group-hover:text-purple-600 group focus:ring-4 focus:ring-purple-300 focus:outline-none">
+                <svg class="w-5 h-5 ml-0.5 mt-0.5 text-gray-100 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                </svg>
+                <span class="sr-only">additem</span>
+            </button>
+            <div class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+
+            </div>
+        </div>
+        <div class="flex justify-evenly h-full max-w-lg mx-auto ">
+            <button type="button" class="inline-flex flex-col p-4 items-center justify-center px-5 rounded-full hover:text-white hover:bg-purple-600">
+                <svg class="w-5 h-5 mb-1 text-gray-500  hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                </svg>
+                <span class="sr-only">profile</span>
+            </button>
+            <div class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+
+            </div>
+        </div>
+
+        <!--  X __ X not working X __ X
+        <div class="flex items-center justify-center">
+            <button data-tooltip-target="tooltip-new" type="button" class="inline-flex items-center justify-center w-10 h-10 font-medium bg-blue-600 rounded-full hover:bg-blue-700 group focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                </svg>
+                <span class="sr-only">New item</span>
+            </button>
+        </div>
+        <div id="tooltip-new" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Create new item
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-r-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+            </svg>
+            <span class="sr-only">Profile</span>
+        </button>
+        <div id="tooltip-profile" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Profile
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    -->
+    </div>
+   
+</div>
+</body>
+</html>

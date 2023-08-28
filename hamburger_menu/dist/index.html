@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c46f32436a.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  
+  <!-- navigation -->
+  <nav class="flex flex-col ">
+    <div class="flex flex-row p-2">
+      <span class="flex flex-grow">
+        <i class="fa-brands fa-codepen pr-1"></i>
+        <i class="fa-solid fa-bars ml-1 px-1 cursor-pointer" name="menu" id="hamburger"></i>
+      </span>
+      <i class="flex justify-end fa-regular fa-address-card" ></i>
+    </div>
+
+    <div class="h-1 bg-teal-500 w-full"></div>
+    <div class="fixed md:static hidden md:justify-center align-middle w-full h-full md:h-8 p-1 -mt-1 bg-teal-500 text-xl md:text-xs text-white transition-opacity ease-in opacity-0 " id="ham">
+      <ul class=" flex flex-col md:flex-row md:justify-center md:text-center font-semibold md:font-normal -mt-1 p-3 pt-6 md:p-0 ">  
+        <!-- #Dashboard -->
+        <li class="mt-1 pt-1 border-b-2 md:border-0 border-teal-400 md:m-1 md:p-1"><a href="#dashboard" id="dash" class="cursor-pointer ">Dashboard</a></li>
+        <!-- mailbox  -->
+        <li class="mt-1 pt-1 border-b-2 md:border-0 border-teal-400 md:m-1 md:p-1"><a href="#" class="cursor-pointer ">Mail</a></li>
+        <!-- instructions -->
+        <li class="mt-1 pt-1 border-b-2 md:border-0 border-teal-400 md:m-1 md:p-1"><a href="#" class="cursor-pointer ">Instruction</a></li>
+        <!-- matter -->
+        <li class="mt-1 pt-1 border-b-2 md:border-0 border-teal-400 md:m-1 md:p-1"><a href="#" class="cursor-pointer ">Matter</a></li>
+        <!-- tasks -->
+        <li class="mt-1 pt-1 border-b-2 md:border-0 border-teal-400 md:m-1 md:p-1"><a href="#table" id="task" class="cursor-pointer ">Tasks</a></li>
+        <!-- settings -->
+        <li class="mt-1 pt-1 border-b-2 md:border-0 border-teal-400 md:m-1 md:p-1"><a href="#" class="cursor-pointer ">Settings</a></li>
+        <!-- close -->
+        <li class="mt-1 pt-1 "><a href="#" id="pam" class="md:hidden cursor-pointer "><i class="fa-solid fa-xmark"></i> Close</a></li>
+      
+      </ul>
+    </div>
+  </nav>
+  <!-- Dashboard -->
+  <section>
+    <!-- text area -->
+    <div class="flex justify-between m-2 mb-4">
+    <!-- text left -->
+    <h1 class="flex font-bold text-lg" id="dashboard">Dashboard</h1>
+    <!-- text right -->
+    <h3 class="flex text-sm" id="days_left">Activities in <p class="font-bold text-teal-600" id="remin"> XX </p> days</h3>
+    </div>
+
+    <!-- blocks x6 -->
+    <div class="m-2 grid gap-4 grid-cols-2 grid-rows-3 md:grid-cols-6 md:grid-rows-1 md:text-sm 2xl:flex 2xl:justify-center" >
+
+
+      <!-- block 1 -->
+      <div class="flex flex-col 2xl:flex-row text-center justify-center md:p-4 bg-blue-500 text-white rounded-md">
+        <p>Processing</p>
+        <p id="pro">XX</p>
+      </div>
+      <!-- block 2 -->
+      <div class="flex flex-col 2xl:flex-row text-center justify-center md:p-4 bg-blue-500 text-white rounded-md">
+        <p>Awaiting Manual Tasks</p>
+        <p id="manual">XX</p>
+      </div>
+      <!-- block 3 -->
+      <div class="flex flex-col 2xl:flex-row text-center justify-center md:p-4 bg-teal-600 text-white rounded-md">
+        <p>Awaiting Info From Client</p>
+        <p >XX</p>
+      </div>
+      <!-- block 4 -->
+      <div class="flex flex-col 2xl:flex-row text-center justify-center md:p-4 bg-teal-600 text-white rounded-md">
+        <p>Dupilicate instructions</p>
+        <p>XX</p>
+      </div>
+      <!-- block 5 -->
+      <div class="flex flex-col 2xl:flex-row text-center justify-center md:p-4 bg-teal-500 text-white rounded-md">
+        <p>Concluded</p>
+        <p>XX</p>
+      </div>
+      <!-- block 6 -->
+      <div class="flex flex-col 2xl:flex-row text-center justify-center md:p-4 bg-teal-500 text-white rounded-md">
+        <p>Error</p>
+        <p>XX</p>
+      </div>
+    </div>
+  </section >
+  <!-- live feed maybe -->
+  <!-- table -->
+  <section class="p-1 ">
+    <div class="flex justify-between p-1 ">
+    <!-- title -->
+    <h1 id="table" class="">Manual Tasks</h1>
+    <!-- search bar with counter -->
+    <div class="flex items-center">
+      <input type="text" class=" rounded-l-md focus:none w-24 mr-2" placeholder="Search...">
+
+      <input type="number" class="w-10" placeholder="10">
+
+    </div>
+
+    </div>
+    <!-- green line -->
+    <!-- <div class="h-0.5 bg-teal-500 w-full"></div> -->
+
+    <table class="text-left  min-w-full " id="tabel">
+      <thead class="">
+        <tr class="border-y-2 border-y-teal-500 ">
+          <th class="w-1/2 font-semibold">Task type</th>
+          <div class="font-semibold">
+          <th class=" font-semibold">Client</th>
+          <th class="font-semibold">Refrence</th>
+          <th class="font-semibold">Created</th>
+          <th class="font-semibold">Status</th>
+          </div>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Sliding Mr. Bones</td>
+          <td>Malcolm Lockyer</td>
+          <td>1961</td>
+          <td>Malcolm Lockyer</td>
+          <td>1961</td>
+        </tr>
+        <tr>
+          <td>The Woman</td>
+          <td>The Eagles</td>
+          <td>1972</td>
+          <td>The Eagles</td>
+          <td>1972</td>
+        </tr>
+        <tr>
+          <td>Shining Star</td>
+          <td>Earth, Wind, and Fire</td>
+          <td>1975</td>
+          <td>Earth, Wind, and Fire</td>
+          <td>1975</td>
+        </tr>
+        <tr>
+          <td>The Sliding Mr. Bones</td>
+          <td>Malcolm Lockyer</td>
+          <td>1961</td>
+          <td>Malcolm Lockyer</td>
+          <td>1961</td>
+        </tr>
+        <tr>
+          <td>The Woman</td>
+          <td>The Eagles</td>
+          <td>1972</td>
+          <td>The Eagles</td>
+          <td>1972</td>
+        </tr>
+        <tr>
+          <td>Shining Star</td>
+          <td>Earth, Wind, and Fire</td>
+          <td>1975</td>
+          <td>Earth, Wind, and Fire</td>
+          <td>1975</td>
+        </tr>
+      </tbody>
+      
+    </table>
+    <!-- green line -->
+    <div class=" h-0.5 bg-teal-500 w-full"></div>
+    <div class="my-2 flex flex-row justify-between">
+      <!-- info of shown items -->
+      <p class="text-blue-600 text-xs">Showing x to x of x entries</p>
+      <!-- page number picker -->
+      <ul class="inline-flex -space-x-px text-sm">
+        <li>
+          <a href="#" class="ml-0 flex h-8 items-center justify-center rounded-l-lg border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-blue-300 hover:text-gray-700 ">Prev</a>
+        </li>
+        <li>
+          <a href="#" class="ml-0 flex h-8 items-center justify-center border-gray-300 bg-blue-50 px-3 leading-tight text-blue-800 hover:bg-blue-300 hover:text-blue-900 ">1</a>
+        </li>
+        <li>
+          <a href="#" class="ml-0 flex h-8 items-center justify-center border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-blue-300 hover:text-gray-700 ">2</a>
+        </li>
+        <li>
+          <a href="#" class="ml-0 flex h-8 items-center justify-center border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-blue-300 hover:text-gray-700 ">3</a>
+        </li>
+        <li>
+          <a href="#" class="ml-0 flex h-8 items-center justify-center rounded-r-lg border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-blue-300 hover:text-gray-700 ">Next</a>
+        </li>
+      </ul>
+    </div>
+    
+
+    
+    
+  </section>
+</body>
+</html>
